@@ -5,6 +5,7 @@ bool checkPrime(int);
 
 int main()
 {
+/*
     int a;
     cout << "请输入一个整数" << endl;
     while (cin >> a)
@@ -14,6 +15,18 @@ int main()
         else
             cout << "不是质数" << endl;
     }
+    return 0;
+*/
+    int count = 0;
+    for (int j = 1; j<=100;j++)
+    {
+        if (checkPrime(j))
+	{ 
+ 	    cout << j << endl;
+	    count += 1;
+        }
+    }
+    cout << "count: " << count;
     return 0;
 }
 
